@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Single+Day&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("images/terrain1.jpg") ;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: yellow;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.header-links:hover{
+    transition: ease-in-out 1s;
+}
+.header-links:hover{
+    text-decoration: underline;
+}
+
+.logo{
+     font-size: 2em;
+     color: yellow;
+     user-select: none;
+}
+
+
+#signin,#signout{
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    padding: 4px 5px 4px 5px;
+}
+/* form style */
+
+
+@keyframes slideright{
+    from{
+        transform:translateX(-200px);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0px);
+        opacity: 1;
+    }
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow:  0 0 30px rgba(77, 77, 77, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideright ;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.wrapper .form-box{
+    width:100%;
+    padding: 40px;
+}
+
+.form-box h2{
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.input-box{
+    position: relative;
+    width: 100%;
+    margin: 30px 0;
+    height: 50px;
+    border-bottom: 2px solid rgb(135, 135, 135);
+}
+
+
+.input-box label{
+    position: absolute;
+    top: 100%;
+    left: 5px;
+    transform: translateY(-50px);
+    color: yellow;
+    font-size: 1em;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: 30px;
+}
+    
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    line-height: 57px;
+    color: yellow;
+
+}
+
+.btn{
+    width:100%;
+    height:45px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background: yellow;
+    cursor: pointer;
+    color: rgb(63, 63, 63);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.login-register{
+    font-size: .9em;
+    color: antiquewhite;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.register-link{
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 500;
+    color: antiquewhite;
+    margin-left: 5px;
+
+}
+
+
+
+
+@keyframes slideright2{
+    0%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+table{
+    width: 70%;
+    margin: auto;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation-name: slideright2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+.action{
+    text-decoration: none;
+    color: rgb(246, 255, 0);
+}
+tr{
+    border: 1px solid black;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+tr:hover{
+    background-color: grey ;
+}
+td{
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+}
+th{
+    border: 1px solid black;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+}
+
+
+
+li{
+    list-style: none;
+}
+
+.sign{
+    text-decoration: underline;
+    color: rgb(1, 51, 101);
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.result{
+    font-size: 100px;
+    font-weight: 700;
+    font-family: 'Bebas Neue', sans-serif;
+    color: black;
+    width: fit-content;
+}

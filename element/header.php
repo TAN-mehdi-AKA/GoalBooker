@@ -7,8 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/css2.css">
     <link rel="icon" href="css/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -41,5 +42,15 @@
             ?>
         </nav >
         </div>
-        
+        <a id="FF_icon"><i class="fa-solid fa-bars fa-xl" id="F_icon"></i></a>
     </header>
+    <script>
+        const toggleButton = document.getElementById('FF_icon');
+        const navbarLinks = document.getElementsByClassName('navigation')[0];
+    
+        toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('navigation');
+        navbarLinks.classList.toggle('navigation2');
+        });
+    </script>
+</body>

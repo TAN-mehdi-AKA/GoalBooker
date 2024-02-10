@@ -21,12 +21,13 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 0px;
     background: transparent;
     z-index: 99;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #555;
 }
 .navigation a{
     position: relative;
@@ -37,17 +38,24 @@ header {
     margin-left: 40px;
 }
 
-.header-links:hover{
-    transition: ease-in-out 1s;
+#F_icon{
+    color: #fff;
+    display: none;
+    position:absolute;
+    right: 1.2em;
+    top: 42px;
 }
-.header-links:hover{
-    text-decoration: underline;
+
+.header-links{
+    padding: 10px;
 }
+
 
 .logo{
      font-size: 2em;
      color: yellow;
      user-select: none;
+     display: none;
 }
 
 
@@ -251,6 +259,50 @@ ul{
     font-size: 100px;
     font-weight: 700;
     font-family: 'Bebas Neue', sans-serif;
-    color: black;
+    color: yellow;
     width: fit-content;
+}
+@media screen and (max-width: 827px) {
+    #F_icon{
+        display: flex;
+    }
+    th,td,tr{
+        border-radius: 0px;
+    }
+    header{
+        display:block;
+        background: #555;
+        padding: 20px;
+        
+    }
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+    .navigation2{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-links{
+        text-align: center;
+        position: relative;
+        font-size: 1.1em;
+        color: yellow;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 40px;
+    }
+    .header-links:hover{
+        background: #000000;
+    }
+    .result{
+        font-size: 50px;
+        font-weight: 600;
+        font-family: 'Bebas Neue', sans-serif;
+        color: yellow;
+    }
+    .logo{
+        display: block;
+    }
 }
